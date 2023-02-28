@@ -4,6 +4,7 @@ import FruitsPage from '../pages/fruits/fruits.page';
 import FruitsDetailPage from '../pages/fruits/pages/fruit-detail.page';
 import FruitsIndexPage from '../pages/fruits/pages/fruits-index.page';
 import HomePage from '../pages/home/home.page';
+import DemoHookPage from '../pages/demo-hook/demo-hook.page';
 
 const appRoute = [
     {
@@ -23,6 +24,10 @@ const appRoute = [
                 element: <FruitsDetailPage />
             }
         ]
+    },
+    {
+        path: 'hook',
+        element: <DemoHookPage />
     },
     {
         path: 'contact',

@@ -10,7 +10,7 @@ const CustomLink = ({ to, name }) => (
         {({ isActive }) => !isActive ? (
             <span>{name}</span>
         ) : (
-            <span>{'> ' + name + ' <'}</span>
+            <span>&gt; {name} &lt;</span>
         )}
     </NavLink>
 );
@@ -23,6 +23,9 @@ const NavBar = () => (
             </li>
             <li>
                 <CustomLink to='/fruits' name='Fruits' />
+            </li>
+            <li>
+                <CustomLink to='/hook' name='Hook' />
             </li>
             <li>
                 <CustomLink to='/contact' name='Contact' />
